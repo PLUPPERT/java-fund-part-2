@@ -20,9 +20,15 @@ public class Main {
         */
 
         // Exercise 3:
+        /*
         LocalDate lastMonday = LocalDate.parse("2023-11-20");
         LocalDate nextMonday = LocalDate.parse("2023-11-27");
         lastMonday.datesUntil(nextMonday)
                 .forEach(date -> System.out.println(date.format(DateTimeFormatter.BASIC_ISO_DATE)));
+        */
+
+        // Exercise 4:
+        LocalDate theDate = LocalDate.parse("2024-05-18");
+        System.out.println("theDate = " + theDate);
     }
 }
