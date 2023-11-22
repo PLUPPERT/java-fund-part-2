@@ -3,6 +3,9 @@ package org.pluppert.javatime;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.time.format.TextStyle;
+import java.time.temporal.TemporalAdjuster;
+import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,7 +31,16 @@ public class Main {
         */
 
         // Exercise 4:
+        /*
         LocalDate theDate = LocalDate.parse("2024-05-18");
         System.out.println("theDate = " + theDate);
+        */
+
+        // Exercise 5:
+        LocalDate theDate = LocalDate.parse("1945-05-08");
+        System.out.println("theDate.getDayOfWeek() = " +
+                theDate
+                .getDayOfWeek()
+                .getDisplayName(TextStyle.FULL, Locale.getDefault()).toUpperCase());
     }
 }
