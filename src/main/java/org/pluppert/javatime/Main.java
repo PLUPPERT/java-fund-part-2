@@ -56,6 +56,7 @@ public class Main {
         */
 
         // Exercise 7:
+        /*
         LocalDate theDate = LocalDate.now()
                 .plusYears(10)
                 .minusMonths(10);
@@ -65,5 +66,11 @@ public class Main {
         System.out.println("Years: " + period.getYears() +
                             "\nmonths: " + period.getMonths() +
                             "\ndays: " + period.getDays());
+        */
+
+        // Exercise 8:
+        Period period = Period.of(4,7,29);
+        LocalDate currentDatePlusPeriod = LocalDate.now().plus(period);
+        System.out.println("currentDatePlusPeriod = " + currentDatePlusPeriod);
     }
 }
