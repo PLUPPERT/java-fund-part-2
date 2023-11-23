@@ -1,6 +1,7 @@
 package org.pluppert.javatime;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.TextStyle;
@@ -46,10 +47,23 @@ public class Main {
         */
 
         // Exercise 6:
+        /*
         LocalDate theDate = LocalDate.now()
                 .plusYears(10)
                 .minusMonths(10);
 
         System.out.println("theDate = " + theDate);
+        */
+
+        // Exercise 7:
+        LocalDate theDate = LocalDate.now()
+                .plusYears(10)
+                .minusMonths(10);
+        Period period = Period.between(LocalDate.parse("1984-05-18"), theDate);
+
+        System.out.println("Time elapsed from my birthdate until \"theDate\"");
+        System.out.println("Years: " + period.getYears() +
+                            "\nmonths: " + period.getMonths() +
+                            "\ndays: " + period.getDays());
     }
 }
