@@ -37,10 +37,19 @@ public class Main {
         */
 
         // Exercise 5:
+        /*
         LocalDate theDate = LocalDate.parse("1945-05-08");
         System.out.println("theDate.getDayOfWeek() = " +
                 theDate
                 .getDayOfWeek()
                 .getDisplayName(TextStyle.FULL, Locale.getDefault()).toUpperCase());
+        */
+
+        // Exercise 6:
+        LocalDate theDate = LocalDate.now()
+                .plusYears(10)
+                .minusMonths(10);
+
+        System.out.println("theDate = " + theDate);
     }
 }
