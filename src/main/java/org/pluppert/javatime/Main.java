@@ -1,11 +1,6 @@
 package org.pluppert.javatime;
 
 import java.time.*;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-import java.time.format.TextStyle;
-import java.time.temporal.TemporalAdjuster;
-import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
