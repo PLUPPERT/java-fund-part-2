@@ -10,8 +10,15 @@ public class Main {
         */
 
         // Exercise 5:
+        /*
         String javaWorst = "Java is the worst programming language!";
         String javaBest = javaWorst.replace("worst", "best");
         System.out.println("javaBest = " + javaBest);
+        */
+
+        // Exercise 6:
+        String originalString = "\tJ\ta\tv\ta\t";
+        String trimmedString = originalString.trim();
+        System.out.println("trimmedString = " + trimmedString);
     }
 }
