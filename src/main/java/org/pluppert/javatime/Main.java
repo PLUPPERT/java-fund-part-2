@@ -120,6 +120,7 @@ public class Main {
         */
 
         // Exercise 15:
+        /*
         LocalDate currentDate = LocalDate.of(2015, 4, 9);
         LocalTime currentTime = LocalTime.of(13, 37);
 
@@ -127,5 +128,15 @@ public class Main {
 
         System.out.println("currentDateTime = " + currentDateTime.format(
                 DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")));
+        */
+
+        // Exercise 16:
+        LocalDateTime aDateTimeObject = LocalDateTime.of(2004, 6, 16, 12, 15);
+
+        LocalDate dateFromObject = LocalDate.from(aDateTimeObject);
+        LocalTime timeFromObject = LocalTime.from(aDateTimeObject);
+
+        System.out.println("dateFromObject = " + dateFromObject);
+        System.out.println("timeFromObject = " + timeFromObject);
     }
 }
