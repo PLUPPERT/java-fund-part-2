@@ -5,6 +5,7 @@ import java.time.LocalTime;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.time.format.TextStyle;
 import java.time.temporal.TemporalAdjuster;
 import java.util.Locale;
@@ -88,7 +89,16 @@ public class Main {
         */
 
         // Exercise 11:
+        /*
         LocalTime timeFromString = LocalTime.parse("13:37:48");
         System.out.println(timeFromString);
+        */
+
+        // Exercise 12:
+        LocalTime currentLocalTime = LocalTime.parse(DateTimeFormatter
+                .ofLocalizedTime(FormatStyle.MEDIUM)
+                .format(LocalTime.now()));
+
+        System.out.println("currentLocalTime = " + currentLocalTime);
     }
 }
