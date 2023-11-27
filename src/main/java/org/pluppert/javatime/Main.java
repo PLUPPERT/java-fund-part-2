@@ -1,6 +1,7 @@
 package org.pluppert.javatime;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
@@ -69,8 +70,15 @@ public class Main {
         */
 
         // Exercise 8:
+        /*
         Period period = Period.of(4,7,29);
         LocalDate currentDatePlusPeriod = LocalDate.now().plus(period);
         System.out.println("currentDatePlusPeriod = " + currentDatePlusPeriod);
+        */
+
+        // Exercise 9:
+        // Create a LocalTime object of the current time.
+        LocalTime current = LocalTime.now();
+        System.out.println(current);
     }
 }
