@@ -77,10 +77,18 @@ public class Main {
         */
 
         // Exercise 9:
+        /*
         LocalTime current = LocalTime.now();
         System.out.println(current);
+        */
 
         // Exercise 10:
+        /*
         System.out.println(current.getNano());
+        */
+
+        // Exercise 11:
+        LocalTime timeFromString = LocalTime.parse("13:37:48");
+        System.out.println(timeFromString);
     }
 }
