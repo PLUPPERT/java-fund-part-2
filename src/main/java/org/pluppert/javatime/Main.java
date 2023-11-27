@@ -111,10 +111,21 @@ public class Main {
         */
 
         // Exercise 14:
+        /*
         LocalDateTime currentLocalTime = LocalDateTime.now();
         String currentLocalTimeString = currentLocalTime.format(
                 DateTimeFormatter.ofPattern("eeee dd MMMM HH:mm"));
 
         System.out.println("currentLocalTimeString = " + currentLocalTimeString);
+        */
+
+        // Exercise 15:
+        LocalDate currentDate = LocalDate.of(2015, 4, 9);
+        LocalTime currentTime = LocalTime.of(13, 37);
+
+        LocalDateTime currentDateTime = LocalDateTime.of(currentDate, currentTime);
+
+        System.out.println("currentDateTime = " + currentDateTime.format(
+                DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")));
     }
 }
