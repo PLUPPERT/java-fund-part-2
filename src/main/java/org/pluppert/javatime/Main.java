@@ -1,9 +1,6 @@
 package org.pluppert.javatime;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Period;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.time.format.TextStyle;
@@ -95,10 +92,20 @@ public class Main {
         */
 
         // Exercise 12:
+        /*
         LocalTime currentLocalTime = LocalTime.parse(DateTimeFormatter
                 .ofLocalizedTime(FormatStyle.MEDIUM)
                 .format(LocalTime.now()));
 
         System.out.println("currentLocalTime = " + currentLocalTime);
+        */
+
+        // Exercise 13:
+        LocalDateTime currentLocalTime = LocalDateTime.now();
+
+        System.out.println("currentLocalTime = " +
+                currentLocalTime.format(
+                        DateTimeFormatter
+                                .ofPattern("yyyy-MM-dd, 'time:' HH:mm")));
     }
 }
