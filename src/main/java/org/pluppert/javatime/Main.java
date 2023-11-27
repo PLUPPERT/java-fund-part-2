@@ -77,8 +77,10 @@ public class Main {
         */
 
         // Exercise 9:
-        // Create a LocalTime object of the current time.
         LocalTime current = LocalTime.now();
         System.out.println(current);
+
+        // Exercise 10:
+        System.out.println(current.getNano());
     }
 }
